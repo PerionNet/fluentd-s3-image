@@ -1,0 +1,1 @@
+ps -ef | grep fluentd | grep -v "grep" | grep -v "under-supervisor" | awk '{print $2}' | xargs kill -SIGUSR1
